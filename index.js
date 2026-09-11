@@ -81,11 +81,14 @@ var f1=function(){
     return (a*b);
 }
 
-function f2(){
-    var n=50;
-    console.log(f1()+n);
-}
-f2();
+// function f2(){
+//     var n=50;
+//     console.log(f1()+n);
+// }
+// f2();
+
+console.log(typeof f1); // function
+
 
 
 
