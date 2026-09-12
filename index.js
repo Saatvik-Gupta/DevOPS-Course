@@ -89,6 +89,7 @@ var f1=function(){
 
 console.log(typeof f1); // function
 
-// lexigonal environment and closure concept
+// lexigonal environment and closure concept      
+                                           
 
 
