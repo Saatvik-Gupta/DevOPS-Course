@@ -91,11 +91,11 @@
 
 //10. lexigonal environment and closure concept      
 
-var x=10;
+/*var x=10;
 function fn1(){
     var x=30;
     function fn2(){
-        console.log(x);
+        console.log(x); // lexigonal environment closure of fn2() with fn1()
     }
     return fn2;
 }
@@ -106,7 +106,27 @@ function fn3(){
     console.log(x+y); // 20+10(global x)
     fn(); // indirectly fn2(){.. uses x=30
 }
-fn3();
+fn3();*/
+
+// 11. Another example of Closure
+
+function counter(){
+    var count=0;
+    return function(){
+        count++;
+        console.log(count);
+    };
+}
+
+var c1=counter();
+var c2=counter();
+
+c1();// 1
+c2();// 1
+c2();// 2
+c1();// 2
+c1();// 3
+c2();// 3
                                            
 
 
