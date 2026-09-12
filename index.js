@@ -1,12 +1,12 @@
-// console.log("Saatvik Gupta");
+//1. console.log("Saatvik Gupta");
 
 // var a=10;
 // var b=5;
 // console.log(a+b);
 
-// // alert("Danger!");
+//2. alert("Danger!");
 
-// var x;
+//3. var x;
 // console.log(x);
 
 // function fn(){ // functions are useless until they are called
@@ -14,17 +14,17 @@
 // }
 // fn();
 
-// var fn1=function () { console.log("Function in Variable")}
+//4. var fn1=function () { console.log("Function in Variable")}
 // fn1();
 
 // console.log(typeof fn1);
 
-// var p=10; // primitive data type
+//5. var p=10; // primitive data type
 // var b=3.14;
 // var c="Saatvik";
 // console.log(typeof c);
 
-// // array
+//6. array
 
 // var arr=[1,2,3,4];
 
@@ -48,7 +48,7 @@
 
 // console.log(student);
 
-// Javascript is a single threaded synchronous language
+//7. Javascript is a single threaded synchronous language
 
 // console.log(x); // undefined
 // var x=10;
@@ -59,7 +59,7 @@
 
 // f();
 
-// console.log("Start");
+//8. console.log("Start");
 // var x=10;
 // console.log(x);
 // console.log(y);
@@ -73,13 +73,13 @@
 // console.log(f());
 // console.log("End");
 
-var x=10;
-console.log(x);
-var f1=function(){
-    var a=5;
-    var b=10;
-    return (a*b);
-}
+//9. var x=10;
+// console.log(x);
+// var f1=function(){
+//     var a=5;
+//     var b=10;
+//     return (a*b);
+// }
 
 // function f2(){
 //     var n=50;
@@ -87,9 +87,26 @@ var f1=function(){
 // }
 // f2();
 
-console.log(typeof f1); // function
+// console.log(typeof f1); // function
 
-// lexigonal environment and closure concept      
+//10. lexigonal environment and closure concept      
+
+var x=10;
+function fn1(){
+    var x=30;
+    function fn2(){
+        console.log(x);
+    }
+    return fn2;
+}
+
+var fn=fn1(); // contains fn2(){...} as return fn2
+function fn3(){
+    var y=20;
+    console.log(x+y); // 20+10(global x)
+    fn(); // indirectly fn2(){.. uses x=30
+}
+fn3();
                                            
 
 
