@@ -50,18 +50,45 @@ console.log(a);*/
 console.log(x);*/
 
 //6.
-const a={
+/*const a={
     name:"Saatvik",
     class:"AIML"
 }
 
-let b={
+const b={
     name:"Saatvik",
     age:20
 }
 b.name="ABC";
 
 console.log(a); // a.class for class only
+console.log(b);*/
+
+//7.Primitive and Non- Primitive
+
+/*let x=10;
+let y=x; // value stored(Primitive)
+y=++y;
+
+console.log(x); // 10
+console.log(y); // 11
+
+let a={
+    name:"Saatvik",
+    age:19
+}
+let b=a; // reference store(Non-Primitive)
+b.age=21;
+
+console.log(a);
 console.log(b);
+
+console.log(typeof a);
+console.log(typeof x);*/
+
+// 8.Object in Js
+
+
+
 
 
