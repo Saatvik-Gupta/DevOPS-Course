@@ -42,12 +42,26 @@ console.log(a); // 10*/
 console.log(a);*/
 
 //5.
-let x=10;
+/*t x=10;
 {
     let x=20;
     console.log(x);
 }
-console.log(x);
+console.log(x);*/
 
+//6.
+const a={
+    name:"Saatvik",
+    class:"AIML"
+}
+
+let b={
+    name:"Saatvik",
+    age:20
+}
+b.name="ABC";
+
+console.log(a); // a.class for class only
+console.log(b);
 
 
