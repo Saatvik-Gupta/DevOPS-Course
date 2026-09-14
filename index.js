@@ -118,7 +118,7 @@ fn3();*/
 
 // 11. Another example of Closure
 
-function counter(){
+/*function counter(){
     var count=0;
     return function(){
         count++;
@@ -134,7 +134,7 @@ c2();// 1
 c2();// 2
 c1();// 2
 c1();// 3
-c2();// 3
+c2();// 3 */
                                            
 
 
