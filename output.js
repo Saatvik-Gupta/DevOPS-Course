@@ -88,6 +88,19 @@ console.log(typeof x);*/
 
 // 8.Object in Js
 
+var a="1";
+var b=2;
+
+console.log(a+b); // undefined behaviour of js it acts as a concatination
+
+var x="5";
+var y=1;
+console.log(x-y); // here string is like a number 
+
+var p="5";
+var q=5;
+console.log(p==q); // Js is loosly typed thus considerd it true if used ===} strongly typed
+console.log(p===q); // false
 
 
 
