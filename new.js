@@ -3,9 +3,11 @@
 // const h1=div1.children[0];
 // h1.innerHTML="Value Changed by using JS";
 
-// const h1=document.getElementById("head1");
+// const h1=document.getElementById("head1"); //id give
 // h1.innerText="Again Changed";
 
 // element creation
 const footerDiv=document.createElement("div");
 footerDiv.innerText="This is a Footer Div";
+
+//querySelector +more get.....
