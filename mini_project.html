@@ -1,0 +1,51 @@
+<!-- Query selector,child...addEventListener, removeEventListner -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Container {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+
+    <script>
+        let boxi = document.getElementsByClassName("box");
+
+        for (let i = 0; i < 5; i++) {
+
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+
+            let color = `rgb(${r},${g},${b})`;
+
+            boxi[i].style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>
