@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+            <script>
+        docucment.addEventListener("click",function(e){
+            let x=e.clientX;
+            let y=e.clientY;
+
+            let mini=30;
+            let maxi=200; // random between 30 and 200
+            let r=mini + Math.random()*(maxi-mini);
+
+            let ml=x-r;
+            let mt=y-r;
+
+            let box=document.createElement("div");
+            box.style.height='';
+
+        });
+
+    </script>
+</body>
+</html>
