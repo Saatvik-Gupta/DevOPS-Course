@@ -10,4 +10,4 @@
 const footerDiv=document.createElement("div");
 footerDiv.innerText="This is a Footer Div";
 
-//querySelector +more get operations...+CRUD
+//querySelector +more get operations...+ CRUD
