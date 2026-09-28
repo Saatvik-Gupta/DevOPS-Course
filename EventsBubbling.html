@@ -37,18 +37,19 @@
         const content1=document.getElementsByClassName("grand")[0];
         content1.addEventListener("click",function(){
             alert("Grand Clicked")
-        });
+        },false);
+        //content1.addEventListener(eventname,function(){...},false/true) -->false by default
 
         const content2=document.getElementsByClassName("father")[0];
         content2.addEventListener("click",function(){
             alert("Father Clicked")
-        });
+        },false);
 
         const content3=document.getElementsByClassName("child")[0];
         content3.addEventListener("click",function(e){
             alert("Child Clicked")
            // e.stopPropagation(); -->Fancing child ka pop up only father and grand nhi
-        });
+        },false);
     </script>
 
 
