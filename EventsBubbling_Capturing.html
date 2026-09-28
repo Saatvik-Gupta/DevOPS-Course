@@ -49,10 +49,15 @@
         },false);
 
         const content3=document.getElementsByClassName("child")[0];
-        content3.addEventListener("click",function(e){
+        content3.addEventListener("click",function(){
             alert("Child Clicked")
            // e.stopPropagation(); -->Fancing child ka pop up only father and grand nhi
         },false);
+
+        const content11=document.getElementsByClassName("grand")[0];
+        content11.addEventListener("click",function(){
+            alert("Grand Capturing Phase Clicked")
+        },true);
     </script>
 
 
