@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grand{
+        height: 400px;
+        width:400px;
+        border:2px solid black;
+    }
+
+    .father{
+        height:200px;
+        width:200px;
+        margin:20px;
+        padding:20px;
+        border:2px solid black;
+    }
+
+    .child{
+        height:50px;
+        margin: 50px;
+        border:2px solid black;
+    }
+</style>
+</head>
+<body>
+    <div class="grand">Grandparent
+        <div class="father">Father Box
+        <div class="child">Child Box</div>
+        </div>
+    </div>
+
+    <script>
+        const content1=document.getElementsByClassName("grand")[0];
+        content1.addEventListener("click",function(){
+            alert("Grand Clicked")
+        });
+
+        const content2=document.getElementsByClassName("father")[0];
+        content2.addEventListener("click",function(){
+            alert("Father Clicked")
+        });
+
+        const content3=document.getElementsByClassName("child")[0];
+        content3.addEventListener("click",function(){
+            alert("Child Clicked")
+        });
+    </script>
+
+
+</body>
+</html>
