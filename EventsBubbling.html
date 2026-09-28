@@ -45,8 +45,9 @@
         });
 
         const content3=document.getElementsByClassName("child")[0];
-        content3.addEventListener("click",function(){
+        content3.addEventListener("click",function(e){
             alert("Child Clicked")
+           // e.stopPropagation(); -->Fancing child ka pop up only father and grand nhi
         });
     </script>
 
