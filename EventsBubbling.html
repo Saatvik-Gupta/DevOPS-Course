@@ -38,7 +38,10 @@
         content1.addEventListener("click",function(){
             alert("Grand Clicked")
         },false);
-        //content1.addEventListener(eventname,function(){...},false/true) -->false by default
+
+        //content1.addEventListener(eventname,function(){...},false/true) -->false by default 3 Arguments
+        // true->Event Propogation outward to inward -->Event Capturing
+        // false->Event Propogation inward to outward -->Event Bubbling
 
         const content2=document.getElementsByClassName("father")[0];
         content2.addEventListener("click",function(){
