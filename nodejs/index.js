@@ -46,11 +46,33 @@ const ans_fun=(a,b)=>{
 console.log(fn("Saatvik","D"));*/
 
 //3.Importing a module
-
-const math=require("./math.js");
+/*
+const math=require("./math.js");  ./-->search in current directory to avoid error
 console.log(math); // full value
 console.log(math.add(3,6));
 console.log(math.multiply(2,5));
+*/
+
+//4.Modules
+// fs module-->writeFile,writeFileSync
+
+/*const fs=require("fs"); 
+console.log("start");
+//const data=fs.appendFileSync("./Hello.txt","Hello it is written by fs module");
+
+fs.writeFile("./Hello.txt","Hello it is Async by fs module",(err)=>{
+    if(err){
+    console.log("Error Occured");
+    return;
+    }
+    console.log("Safe");
+});
+//console.log(data);
+console.log("end"); */
+
+
+
+
 
 
 
