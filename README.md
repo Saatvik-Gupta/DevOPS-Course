@@ -2,7 +2,7 @@
 
 This repository contains my **DevOps course learning, practice, and projects**.
 
-## 📚 Currently Learning:
+## 📚 Currently Learning
 
 * 🟨 JavaScript
 * 🟢 Node.js
