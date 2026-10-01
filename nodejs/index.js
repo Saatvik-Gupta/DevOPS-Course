@@ -56,8 +56,8 @@ console.log(math.multiply(2,5));
 //4.Modules
 // fs module-->writeFile,writeFileSync
 
-/*const fs=require("fs"); 
-console.log("start");
+const fs=require("fs"); 
+/*onsole.log("start");
 //const data=fs.appendFileSync("./Hello.txt","Hello it is written by fs module");
 
 fs.writeFile("./Hello.txt","Hello it is Async by fs module",(err)=>{
@@ -70,7 +70,19 @@ fs.writeFile("./Hello.txt","Hello it is Async by fs module",(err)=>{
 //console.log(data);
 console.log("end"); */
 
+console.log("Start");
+const data=fs.readFileSync("Hello.txt","utf-8");
+console.log(data);
 
+fs.readFile("Hello.txt","utf-8",(err,data)=>{
+    if(err){
+    console.log("Error Occured");
+    return;
+    }
+    console.log(data);
+});
+
+console.log("End");
 
 
 
