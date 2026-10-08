@@ -1,0 +1,13 @@
+{
+  "name": "firstrouter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+   "start":"test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
