@@ -102,7 +102,6 @@ var q=5;
 console.log(p==q); // Js is loosly typed thus considerd it true if used ===} strongly typed
 console.log(p===q); // false
 
-// 9. 
 
 
 
