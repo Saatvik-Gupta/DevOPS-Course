@@ -2,12 +2,15 @@
   "name": "firstrouter",
   "version": "1.0.0",
   "description": "",
-  "main": "test.js",
+  "main": "src/index.js",
   "scripts": {
-   "start":"test.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
