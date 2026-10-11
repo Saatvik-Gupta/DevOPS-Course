@@ -1,4 +1,8 @@
-[
-    {"id":1,"title":"go to gym","completed":false},
-     {"id":2,"title":"go to college","completed":false}
-]
+
+{
+    "todos":[
+        {"todosID":1,"title":"Go to Gym","completed":"false","userID":123},
+        {"todosID":2,"title":"Learn DSA","completed":"false","userID":124}
+
+    ]
+}

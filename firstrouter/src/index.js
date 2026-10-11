@@ -1,4 +1,4 @@
-/* import http from "http";
+/* import http from "http"; //-----------------------------1
 import fs from "fs";
 
 function handler(req, res) {
@@ -14,7 +14,7 @@ server.listen(3001, function () {
 */
 
 
-/*import http from "http";
+/*import http from "http"; //------------------------------------2
 import fs from "fs";
 
 
@@ -47,7 +47,7 @@ server.listen(3001, function () {
 console.log("Server is running at http://localhost:3001");
 }); */
 
-/*import http from "http";
+/*import http from "http"; // ---------------------------------------3
 
 import fs from "fs";
 import express from "express";
@@ -74,9 +74,9 @@ server.listen(3001,function(){
     console.log("Server started at port 3001.")
 });*/
 
-// simple express syntax
+// simple express syntax --------------------------------4
 
-import express from "express";
+/*import express from "express";
 import fs from "fs";
 
 const app = express();
@@ -96,3 +96,28 @@ app.listen(3001, function() {
 - res.send() — send a general response, such as text, HTML, or an object.
 - res.json() — send a JSON response, especially when building REST APIs.
 For your /todos API, res.json(JSON.parse(data)) is a clear and appropriate choice. */
+
+// for dummy data dummyjson.com/todos --------------------------------5
+
+/*import http from "http";
+import fs from "fs";
+
+
+function handler(req, res) {
+    
+    console.log(req.url,req.method); // req.url is denoting end path remains same only path change
+    if(req.url==="/todos" && req.method==="GET"){
+    const data=JSON.parse(fs.readFileSync("src/todos.json","utf-8")); // JSON.parse()--> Convert string to object for use
+
+    res.end(JSON.stringify(data));
+}
+}
+
+const server = http.createServer(handler);
+
+server.listen(3001, function () {
+console.log("Server is running at http://localhost:3001");
+});*/
+
+// Express -----------------------------------7
+
