@@ -27,11 +27,12 @@ if(req.method==="GET")
 {
 const data = fs.readFileSync("./todos.json", "utf-8");
 res.end(data);
-} else if(req.method==="POST")
+} 
+else if(req.method==="POST")
 {
     let body ="";
     req.on("data",function(chunk){
-        console.log(chunk.toString());
+        console.log(chunk.toString()); // if console.log(chunk)-->buffer form in hexadecimal asynchronous
     });
 
     console.log("Request received");
@@ -64,7 +65,7 @@ app.get("/todos",function(req,res){
 app.post("/todos",function(req,res){
     console.log(req.url);
     console.log(req.method);
-    console.log(req.body);
+    console.log(req.body); // undefined
     res.end("This is post request!");
 });
 
